@@ -1,0 +1,90 @@
+.edit-form {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+
+    &__container {
+        padding: 0 25px 15px 25px;
+        border: 5px solid #80dfff;
+        border-radius: 10px;
+        background: linear-gradient(145deg, #e6f7ff, #b3e7ff);
+        margin: 230px auto;
+        width: 700px;   
+    }
+
+    &__title {
+        font: 700 32px $titleFont;
+    }
+
+    &__input {
+        border: 1px solid #0052cc;
+        border-radius: 2px;
+        height: 25px;
+        width: 380px;
+        padding-left: 5px;
+        margin-bottom: 15px;
+    }
+
+    &__label {
+        font: 700 16px $buttonFont;
+    }
+
+    &__controls {
+        text-align: right;
+    }
+
+    &__button {
+        width: 130px;  
+        font: 700 16px $buttonFont;
+        border: 1px solid black;
+        border-radius: 25px;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #99e6ff;
+        }
+
+        &:focus {
+            border-radius: 25px;
+        }
+
+
+    }
+
+    &__button--red {
+        &:hover {
+           background-color: #ff4d4d; 
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+	.edit-form {
+    
+    &__container {
+      width: 80%;   
+    }
+
+    &__controls {
+        text-align: center;
+    }
+
+    &__input {
+      margin: 0 auto 15px auto;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .edit-form {
+     &__input {
+      width: 85%;
+    }
+  }  
+}

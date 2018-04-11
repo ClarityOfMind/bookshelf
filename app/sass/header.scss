@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    background-color: #b3ecff;
+
+    &__title {
+        font-family: $titleFont;
+        font-size: 3em;
+    }
+
+    &__button {
+        font: 700 20px $buttonFont;
+        border: 1px solid #000;
+        transition: transform 0.1s;
+
+        &:hover {
+           box-shadow: 3px 2px 0px 0px #000;
+           transform: scale(1.1);
+        }  
+    }
+}
+
